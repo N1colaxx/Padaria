@@ -1,0 +1,179 @@
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #423d3d;
+}
+
+/* 
+    vw - largura
+    vh -> altura
+*/
+
+header {
+    width: 100%;
+    height: 6vw;
+    background: #000000;
+}
+
+ .nav {
+    color: white;
+    height: 90%;
+    display: flex;
+    justify-content: center;  
+    justify-content: space-evenly;
+    padding-bottom: 1px;
+}
+
+.nav-logo img {
+    /* background: #ffff; */
+    width: auto;
+    height: 100%;
+    padding: 3%;
+}
+
+.nav-center {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    width: 50%;
+    height: 100%;
+    
+    border-bottom-left-radius: 10px ;
+    border-bottom-right-radius: 10px ;
+}
+
+.nav-pesquisa  {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-pesquisa input {
+    height: 3vh;    
+    border-radius: 15px;
+    border: 2px solid #1709da96;
+    margin-top: 3%;
+    width: 50%;
+    color: #252323;
+
+    padding-left: 1%;
+}
+
+.nav-ul {
+    position: absolute;
+    bottom: 0;
+    justify-content: center;
+    display: flex;
+    list-style-type: none;
+
+    gap: 2%;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+
+    /* background: #83a742; */
+}
+
+.nav-ul li {
+    /* border: 1px solid #ffff; */
+
+    font-size:medium;
+    font-weight: 300; /*ntensidade da fonte */
+    letter-spacing: 2px;
+
+    position: relative;
+    cursor: pointer;
+} 
+
+.nav-ul li::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%; /* Alinha o sublinhado com o centro do item */
+    width: 0; /* Começa com largura 0 para não mostrar o sublinhado */
+    height: 3px;
+    background-color: #5c159e;
+
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out; 
+    color: #5c159e;
+}
+  
+  .nav-ul li.active::after,
+  .nav-ul li:hover::after {
+    width: 50%; /* Largura total quando ativo ou hover */
+    left: 25%; /* Alinha o sublinhado com a borda esquerda do item */
+  }
+
+.nav-btn {
+
+    width: 11vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.nav-BCE {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+
+    top: 5%;
+    width: 90%;
+    padding: 5%;
+
+    background: #154070;
+    border-radius: 10px;
+
+}
+
+.btn-cadastrar, .btn-entrar {
+   border-radius: 50px;
+   color: #000000;
+   padding: 2%;
+cursor: pointer;
+   font-weight: 300; /*ntensidade da fonte */
+   letter-spacing: 1px;
+}
+
+
+
+.nav-BCC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50%;
+    position: absolute;
+
+    bottom: 0%;
+    width: 90%;
+}
+
+
+.nav-carrinho {
+    background:#000000;
+    width: 30px;
+    border: none;
+}
+
+.nav-coracao {
+    background:#000000;
+    width: 30px;
+    border: none;
+}
+
+.nav-coracao:hover img,
+.nav-carrinho:hover img {
+    transform: scale(1.2); /* Aumenta em 10% quando passar o mouse */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+    cursor: pointer;
+}
