@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Padaria do Veio </title>
 
-        <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/main.css">
         
-
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <script async src="./scripts/main.js"></script>
+        
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
 
 
 </head>
 <body>
-        <header>
-            <nav class="nav">  
+    <header>
+        <nav class="nav">
+            <div class="nav-2">
                 <div class="nav-logo">
                     <img src="./IMG/logo.jpg"  alt="logo da loja " >
                 </div>
-
+        
                 <div class="nav-center">
                     <div class="nav-pesquisa" >
                         <input id="searchbar" onkeyup="search_animal()" type="text" name="searchbar" placeholder="Pesquise aqui...">
@@ -38,16 +41,89 @@
                             <p>ou</p>
                         <button class="btn-entrar"> Entrar </button>
                     </div>
-
+        
                     <div class="btn-BCC">
                             <button class="btn-coracao"> <img src="./IMG/SVG/coracao.svg" alt="">  </button>
                             <button class="btn-carrinho">  
                                 <img src="./IMG/SVG/cart.svg" alt="carrinho de super mercado"> 
                     </div>
                 </div>    
-            </nav>
-        </header>
-        
+            </div>
+        </nav>
+    </header>
+    <main>
+                <section id="slieds">
+                    <img  class="slides-img" src="./IMG/logo.jpg" alt="slides sobre nos, e img dos produto">
+                </section>
+                
+                <section id="recepcao">
+                    <div class="text">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam fugiat excepturi totam doloribus neque. Numquam a beatae excepturi eligendi accusantium laborum deleniti asperiores nihil sint consequatur laboriosam, culpa facere harum?
+                        </p>
+                    </div>
+                    <div class="info">
+                        <label class=""></label>
+                        <p class="p-title"> Info da Enpresa </p>
+                        <p> name    </p>
+                        <p> numero  </p>
+                        <p> Rua     </p>
+                        <p> cep     </p>
+                        <p> Estado  </p>
+                    </div>
+                </section>
 
+                <section class="sec-table">
+                    <table id="table">
+                        <theade>
+                            <tr>
+                                <th> Item   </th>
+                                <th> Preço   </th>
+                                <th> Quantidade   </th>
+                            </tr>
+                        </theade>
+                        <tbody>
+                            <tr class="car-products">
+                                <td>
+                                    <img src="./IMG/logo.jpg" alt="" width="100px" >
+                                    <strong>Miniatura</strong>
+                                </td>
+                                <td>
+                                    <span class="valor-produto">R$69,90</span>
+                                </td>
+                                <td>
+                                    <input type="number" value="1" min="8" class="quantidade-produto">
+                                    <button type="button" class="btn-remover">Remover</button>
+                                </td>             
+                            </tr>
+                            
+                            <tr class="car-products">
+                                <td>
+                                    <img src="./IMG/logo.jpg" alt="" width="100px" >
+                                    <strong>Camiseta</strong>
+                                </td>
+                                <td>
+                                    <span class="valor-produto">R$69,90</span>
+                                </td>
+                                <td>
+                                    <input type="number" value="1" min="8" class="quantidade-produto">
+                                    <button type="button" class="btn-remover">Remover</button>
+                                </td>             
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3">
+                                    <strong>Total</strong>
+                                    <span>R$89,89</span>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                        <button type="button" class="btn-finalizar-compra"> Finalizar Compra </button>
+                </section>
+        </main>
+
+    
 </body>
 </html>
