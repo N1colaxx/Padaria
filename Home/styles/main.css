@@ -1,7 +1,6 @@
 
-body {
-    font-family: 'Open Sans', sans-serif;
-}
+
+
 
 #sec-slides {
     width: 99vw;
@@ -135,41 +134,76 @@ body {
 }
 
 
-/* ----------------------------------- */
+/* ---------------------/* ----------------------------------- */
 #sec-recepcao {
+    display: flex;
+    justify-content: center;
+    width: 99vw;
+}
+.conteudo {
     display: flex;
     justify-content: space-between;
     padding: 2%;
+    width: 90vw;
     background-color: #afaaaa;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 70px;
     margin-top: 10%;
 }
 .text {
-    flex: 1;
+    grid-row:auto;
+    display: flex;
+    padding-top: 2%;
     text-align: center;
-    padding-right: 20px;
+    height: 100%;
+    width: 50vw;
 }
-.text p {
+.text p, u {
     font-family: 'Lobster', cursive;
     font-size: 1.5em;
     color: #2c3e50;
 }
 .info-empresa {
-    flex: 1;
+    display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2%;
+    width: 20vw;
     border: 3px solid #2c3e50;
+    border-radius: 30px;
 }
 
+
+
 .info-empresa .p-title {
+    text-align: center;
     font-size: 1.8em;
     font-weight: 600;
     color: #e74c3c;
     margin-bottom: 15px;
 }
-.info-empresa p {
-    font-size: 1.1em;
+ 
+.info-empresa ul li {
+    font-size:large;
     color: #34495e;
-    margin: 5px 0;
+    margin-top: 10%;
 }
+
+/* ---------------------/* ----------------------------------- */
+/* carrinho  */
+
+#sec-table {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 99vw;
+}
+
+.table {
+   width:  50vw;
+}
+

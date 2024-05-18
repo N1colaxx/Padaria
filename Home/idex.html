@@ -5,11 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Padaria do Veio </title>
 
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/global.css">
         
     <script async src="./scripts/carrinho.js"></script>
-    <script async src="./JS/slides.js"></script>
+    <script async src="./scripts/slides.js"></script>
     
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
@@ -31,11 +30,11 @@
                     </div>   
                                     
                     <ul class="nav-ul">
-                        <li class="active" > Home </li>
-                        <li> Promoções </li>
-                        <li> Produtos </li>
-                        <li> Sobre nós</li>
-                        <li> Contate-nos</li>
+                        <li class="active" > <a href="#"> Home </a></li>
+                        <li> <a href="#"> Produtos </a></li>
+                        <li> <a href="#sec-recepcao"> Sobre nós</a></li>
+                        <li> <a href="#"> Contate-nos </a></li>
+                    </ul>
                 </div>
                 
                 <div class="nav-btn">
@@ -54,7 +53,7 @@
         </nav>
     </header>
     <main>
-                 <section id="sec-slides">
+                <section id="sec-slides">
                     <div class="slider">
                         <div class="slides">
                             <input type="radio" name="radio-btn" id="radio1" checked>
@@ -99,42 +98,39 @@
                 </section> 
                 
             
-                
-
                 <section id="sec-recepcao">
-                    <div class="text">
-                        <p>
-                            Bem-vindo à Baipam!<br/> Onde você encontra uma seleção irresistível de pães artesanais, frios de alta qualidade, salgados deliciosos e bebidas refrescantes. Explore nosso site e descubra as delícias que temos para oferecer. A Baipam está aqui para tornar seus momentos ainda mais saborosos!
-                        </p>
-                    </div>
-                    <div class="info-empresa">
-                        <label class="lbl-1">
-                            <p class="p-title"> Info da Enpresa </p>
-                        </label>
-                        <label >                        
-                            <ul>
-                                <li>
-                                    name
-                                </li>
-                                <li>
-                                    numero
-                                </li>
-                                <li>
-                                    Rua
-                                </li>
-                                <li>
-                                    cep 
-                                </li>
-                                <li>
-                                    Estado
-                                </li>
-                            <ul>                                           
-                        </label>
+                    <div class="conteudo">
+                        <div class="text">
+                            <p>
+                                <u>Bem-vindo à Baipam!</u> <br/> Onde você encontra uma seleção irresistível de pães artesanais, frios de alta qualidade, salgados deliciosos e bebidas refrescantes. Explore nosso site e descubra as delícias que temos para oferecer.<br/> A Baipam está aqui para tornar seus momentos ainda mais saborosos!<br/> 😁
+                            </p>
+                        </div>
+                        <div class="info-empresa">
+                                <p class="p-title"> Info da Enpresa </p>                    
+                                <ul>
+                                    <li>
+                                        name
+                                    </li>
+                                    <li>
+                                        numero
+                                    </li>
+                                    <li>
+                                        Rua
+                                    </li>
+                                    <li>
+                                        cep 
+                                    </li>
+                                    <li>
+                                        Estado
+                                    </li>
+                                <ul>                                           
+                            </label>
+                        </div>
                     </div>
                 </section>
 
-                <section class="sec-table">
-                    <table id="table">
+                <section id="sec-table">
+                    <table class="table">
                         <theade>
                             <tr>
                                 <th> Item   </th>
@@ -143,7 +139,7 @@
                             </tr>
                         </theade>
                         <tbody>
-                            <tr class="car-products">
+                            <tr>
                                 <td>
                                     <img src="./IMG/logo.jpg" alt="" width="100px" >
                                     <strong>Miniatura</strong>
@@ -182,8 +178,6 @@
                     </table>
                         <button type="button" class="btn-finalizar-compra"> Finalizar Compra </button>
                 </section>
-        </main>
-
-        
+        </main> 
 </body>
 </html>
