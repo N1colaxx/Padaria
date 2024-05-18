@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/main.css">
         
-    <script async src="./scripts/main.js"></script>
+    <script async src="./scripts/carrinho.js"></script>
+    <script async src="./JS/slides.js"></script>
+    
         
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -17,7 +19,6 @@
 <body>
     <header>
         <nav class="nav">
-            <div class="nav-2">
                 <div class="nav-logo">
                     <img src="./IMG/logo.jpg"  alt="logo da loja " >
                 </div>
@@ -48,14 +49,56 @@
                                 <img src="./IMG/SVG/cart.svg" alt="carrinho de super mercado"> 
                     </div>
                 </div>    
-            </div>
         </nav>
     </header>
     <main>
-                <section id="slieds">
-                    <img  class="slides-img" src="./IMG/logo.jpg" alt="slides sobre nos, e img dos produto">
-                </section>
+                 <section id="sec-slides">
+                    <div class="slider">
+                        <div class="slides">
+                            <input type="radio" name="radio-btn" id="radio1" checked>
+                            <input type="radio" name="radio-btn" id="radio2">
+                            <input type="radio" name="radio-btn" id="radio3">
+                            <input type="radio" name="radio-btn" id="radio4">
+                            <input type="radio" name="radio-btn" id="radio5">
+                    
+                            <div class="slide first">
+                                <img src="./IMG/logo.jpg" alt="logo">
+                            </div>
+                            <div class="slide">
+                                <img src="./IMG/paoDeLeite.jpeg" alt="Pão de Leite">
+                            </div>
+                            <div class="slide">
+                                <img src="./IMG/paoFrances.jpg" alt="Pão Francês">
+                            </div>
+                            <div class="slide">
+                                <img src="./IMG/pãoDeQueijo.jpeg" alt="Pão de Queijo">
+                            </div>
+                            <div class="slide">
+                                <img src="./IMG/slides/carro_3.jpg" alt="Carro">
+                            </div>
+                    
+                            <div class="navigation-auto">
+                                <div class="auto-btn1"></div>
+                                <div class="auto-btn2"></div>
+                                <div class="auto-btn3"></div>
+                                <div class="auto-btn4"></div>
+                                <div class="auto-btn5"></div>
+                            </div>
+                        </div> 
+                                           
+                        <div class="manual-navigation">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                            <label for="radio5" class="manual-btn"></label>
+                        </div> 
+                    </div>
+                </section> 
                 
+            
+                
+
                 <section id="recepcao">
                     <div class="text">
                         <p>
@@ -124,6 +167,6 @@
                 </section>
         </main>
 
-    
+        
 </body>
 </html>
